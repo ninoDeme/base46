@@ -69,7 +69,7 @@ for kind, color in pairs(kinds) do
 end
 
 -- style-specific overrides
-local cmp_ui = require("nvconfig").ui.cmp
+local cmp_ui = require("base46").opts.ui.cmp
 
 local styles = {
   default = {

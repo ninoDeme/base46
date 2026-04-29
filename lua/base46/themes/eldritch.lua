@@ -114,9 +114,9 @@ M.type = "dark"
 
 M = require("base46").override_theme(M, "eldritch")
 
-local nvconfig = require "nvconfig"
+local nvconfig = require("base46").opts
 
-if nvconfig.ui.telescope.style == "bordered" or nvconfig.base46.transparency then
+if nvconfig.ui.telescope.style == "bordered" or nvconfig.transparency then
   M.polish_hl.telescope = {
     TelescopeBorder = { link = "FloatBorder" },
     TelescopePromptBorder = { link = "FloatBorder" },

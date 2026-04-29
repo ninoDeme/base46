@@ -1,6 +1,6 @@
 local colors = require("base46").get_theme_tb "base_30"
 
-local opts = require("nvconfig").base46
+local opts = require("base46").opts
 
 if opts.transparency then
   return {}

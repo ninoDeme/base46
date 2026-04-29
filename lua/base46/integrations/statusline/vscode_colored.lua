@@ -1,10 +1,10 @@
-local config = require "nvconfig"
+local config = require("base46").opts
 local get_theme_tb = require("base46").get_theme_tb
 local theme_type = get_theme_tb "type"
 local colors = get_theme_tb "base_30"
 local lighten = require("base46.colors").change_hex_lightness
 
-local statusline_bg = config.base46.transparency and "NONE" or lighten(colors.statusline_bg, 1)
+local statusline_bg = config.transparency and "NONE" or lighten(colors.statusline_bg, 1)
 local light_grey = lighten(colors.light_grey, 8)
 
 if theme_type == "light" then

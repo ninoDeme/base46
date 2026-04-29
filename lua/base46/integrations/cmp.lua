@@ -47,7 +47,7 @@ local item_kinds = {
   CmpItemKindSuperMaven = { fg = colors.yellow },
 }
 
-local cmp_ui = require("nvconfig").ui.cmp
+local cmp_ui = require("base46").opts.ui.cmp
 
 -- custom highlights per style!
 local styles = {

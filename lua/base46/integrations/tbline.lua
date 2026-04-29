@@ -1,6 +1,6 @@
 local colors = require("base46").get_theme_tb "base_30"
 
-local config = require "nvconfig"
+local config = require("base46").opts
 
 local highlights = {
   Tabline = { bg = colors.black2 },
@@ -88,7 +88,7 @@ local hlgroups_glassy = {
   "TbBufOffModified",
 }
 
-if config.base46.transparency then
+if config.transparency then
   for _, val in ipairs(hlgroups_glassy) do
     highlights[val].bg = "NONE"
   end
