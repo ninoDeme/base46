@@ -193,6 +193,7 @@ M.apply_theme = function(theme)
   M.opts.theme = theme
   require("base46.term").apply()
   vim.cmd.highlight('clear')
+  vim.g.colors_name = 'base46-' .. theme
 
   for _, name in ipairs(M.opts.integrations) do
     M.tb_2hl(M.get_integration(name))
